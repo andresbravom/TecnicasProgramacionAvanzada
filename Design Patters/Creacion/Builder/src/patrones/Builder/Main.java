@@ -1,8 +1,7 @@
 package patrones.Builder;
 
 import patrones.Builder.Usuario;
-//import patrones.Builder.Usuario.UsuarioBuilder;
-public class Programa {
+public class Main {
 	public static void main (String args[]){
 		try {
 			Usuario maria = new UsuarioBuilder("maria","maria.gonzalez@alumnos.nebrija.es").setAñoNacimiento(2000).build();
