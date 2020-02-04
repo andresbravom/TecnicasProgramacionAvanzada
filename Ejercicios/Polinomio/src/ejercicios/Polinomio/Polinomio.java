@@ -59,6 +59,21 @@ public class Polinomio {
 		return c;
 	}
 	
+	public static Polinomio producto (Polinomio p, Polinomio q) {
+		
+		double[] b = new double[p.grado+q.grado];
+		Polinomio c = new Polinomio(b);
+	
+		for (int i = 0; i <= p.grado; i++){
+			for (int j = 0; j< q.grado; j++) {
+			c.coeficientes[i+j] += p.coeficientes[i] * q.coeficientes[j];
+			}
+		}
+	
+		return c;
+		
+	}
+	
 	public boolean esIgual(Polinomio p) {
 		return Polinomio.esIgual(this, p);
 	}

@@ -3,8 +3,8 @@ package ejercicios.Polinomio;
 public class Main {
 
 	public static void main(String[] args) {
-		double a[] = {-3.5, 2.5, 3.0, -4.0}; 
-		double b[] = {-3.5, 2.5, 3.0, -4.0};
+		double a[] = {-3, 2, 3}; 
+		double b[] = {2, -4, 2};
 
 		Polinomio p1 = new Polinomio(a);
 		Polinomio p2 = new Polinomio(b);
@@ -33,6 +33,7 @@ public class Main {
 		System.out.println(p1.suma(p1, p2).toString(p1.suma(p1, p2), f));
 
 		System.out.println(p1.esIgual(p1, p2));
+		System.out.println(p1.producto(p1, p2).toString(p1.producto(p1, p2), "j"));
 
 	}
 
